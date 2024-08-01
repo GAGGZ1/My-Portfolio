@@ -1,71 +1,8 @@
-/* Base styles (applied by default) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Styles for devices with a maximum width of 768px (tablets and smaller devices) */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .sidebar {
+@media screen and (max-width:1200px){
+    #desktop-nav{
         display: none;
     }
-}
-
-/* Styles for devices with a minimum width of 769px and a maximum width of 1200px (desktops) */
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .container {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .sidebar {
-        display: block;
-        float: left;
-        width: 25%;
-    }
-
-    .main-content {
-        float: right;
-        width: 70%;
-    }
-}
-
-/* Styles for devices with a minimum width of 1201px (large desktops) */
-@media only screen and (min-width: 1201px) {
-    .container {
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    .sidebar {
-        display: block;
-        float: left;
-        width: 20%;
-    }
-
-    .main-content {
-        float: right;
-        width: 75%;
+    #hamburger-nav{
+        display:flex;
     }
 }
